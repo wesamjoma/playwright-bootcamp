@@ -1,0 +1,18 @@
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Auth files
+auth.json
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# VS Code
+.vscode/
