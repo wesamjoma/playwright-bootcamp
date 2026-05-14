@@ -77,7 +77,6 @@ def test_request_with_params(playwright: Playwright):
     assert data["args"]["role"] == "admin"
     assert data["args"]["active"] == "true"
 
-    page.route("**/*.jpg", lambda route: route.abort())
     
     api.dispose()
 
