@@ -1,7 +1,7 @@
 from playwright.sync_api import Page, expect
 from pages.login_page import LoginPage
 from pages.product_page import ProductsPage
-from pages.cart_page import cart_page
+from pages.cart_page import CartPage 
 
 def test_checkout(page: Page):
     #login 
@@ -13,7 +13,7 @@ def test_checkout(page: Page):
     products_page.add_product_to_cart("Sauce Labs Backpack")
     products_page.go_to_cart()
     # go to checkout
-    checkout = cart_page(page)
+    checkout = CartPage (page)
     checkout.go_to_checkout()
     
     # verify checkout page

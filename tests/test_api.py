@@ -1,4 +1,4 @@
-from playwright.sync_api import Playwright , page 
+from playwright.sync_api import Playwright  
 
 def test_get_request(playwright: Playwright):
     api = playwright.request.new_context(base_url="https://httpbin.org")
